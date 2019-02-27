@@ -9,7 +9,7 @@ package ejerciciotortugabono;
  *
  * @author emlad
  */
-public class Tortuga2 {
+public class Tortuga2 extends Thread{
     
     private Turtle tortuga;
 

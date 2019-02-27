@@ -5,8 +5,7 @@
  */
 package ejerciciotortugabono;
 
-import Figuras.Rectangulo;
-import Figuras.Triangulo;
+
 import ch.aplu.turtle.Turtle;
 import java.awt.Color;
 

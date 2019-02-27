@@ -27,13 +27,15 @@ public class EjercicioTortugaBono extends TurtleFrame{
       tortuga1.setPos(20,0);
       tortuga2 = new Turtle(this);
       tortuga2.setPos(20,0);
+      tortuga2.setColor(Color.BLACK);
       tortuga3 = new Turtle(this);
       tortuga3.setColor(Color.yellow);
       tortuga3.setPos(-32, -60);
       tortuga4 = new Turtle(this);
       tortuga4.setPos(-89, -60);
+      tortuga4.setColor(Color.PINK);
       tortuga5 = new Turtle(this);
-      tortuga5.setColor(Color.yellow);
+      tortuga5.setColor(Color.ORANGE);
       tortuga5.setPos(-60, 20);
     }
     
@@ -47,17 +49,17 @@ public class EjercicioTortugaBono extends TurtleFrame{
        Tortuga2 hilo3 = new Tortuga2(tortuga3);
        hilo3.start();
        
-       Triangulo hilo4 = new Triangulo(tortuga4);
+       Triangulo hilo4 = new Triangulo(tortuga4,12);
        hilo4.start();
        
-       PintarRectangulo rect1 = new PintarRectangulo(tortuga5, 20, 20);
+       Rectangulo rect1 = new Rectangulo(tortuga5, 20, 20);
        tortuga5.setPos(-60, 20);
        rect1.start();
     }
     
     
     public static void main(String[] args) {
-        EscenarioTortugas escenario = new EscenarioTortugas();
+        EjercicioTortugaBono escenario = new EjercicioTortugaBono();
         escenario.iniciar();  
     }
 }

@@ -11,7 +11,7 @@ import ch.aplu.turtle.Turtle;
  *
  * @author jrozou
  */
-public class Triangulo{
+public class Triangulo extends Thread{
     private Turtle tortuga;
     private int lado;
 
@@ -25,5 +25,9 @@ public class Triangulo{
             this.tortuga.forward(this.lado);
             this.tortuga.right(120);
         }
+    }
+    @Override
+    public void run(){
+        dibujarTriangulo();
     }
 }
