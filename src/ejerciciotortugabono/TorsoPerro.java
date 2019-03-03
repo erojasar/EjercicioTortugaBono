@@ -4,21 +4,18 @@
  * and open the template in the editor.
  */
 package ejerciciotortugabono;
-
 import ch.aplu.turtle.Turtle;
-
 /**
  *
- * @author jrodriguezar
+ * @author Juanes
  */
-public class Triangulo1 extends Thread{
-    
+public class TorsoPerro extends Thread{
     private Turtle tor;
 
-    public Triangulo1(Turtle tor) {
+    public TorsoPerro(Turtle tor) {
         this.tor = tor;
     }
-
+    
     @Override
     public void run() {
         this.tor.right(20);
@@ -44,8 +41,7 @@ public class Triangulo1 extends Thread{
         this.tor.right(110);
         this.tor.forward(57*(4.0/5.0)-4);
         this.tor.penUp();
-        this.tor.forward(1000);
+        
+        this.tor.hideTurtle();
     }
-    
-    
 }

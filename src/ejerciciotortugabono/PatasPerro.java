@@ -4,16 +4,16 @@
  * and open the template in the editor.
  */
 package ejerciciotortugabono;
-    import ch.aplu.turtle.Turtle;
+import ch.aplu.turtle.Turtle;
 /**
  *
- * @author emlad
+ * @author Juanes
  */
-public class Tortuga2 extends Thread{
+public class PatasPerro extends Thread{
     
     private Turtle tortuga;
 
-    public Tortuga2(Turtle tor) {
+    public PatasPerro(Turtle tor) {
         this.tortuga = tor;
     }
 
@@ -48,7 +48,7 @@ public class Tortuga2 extends Thread{
         this.tortuga.penUp();
         this.tortuga.right(100);
         
-        System.out.println("X: " + this.tortuga.getX() + "Y: " + this.tortuga.getY());
+        //System.out.println("X: " + this.tortuga.getX() + "Y: " + this.tortuga.getY());
         
         this.tortuga.forward(12.4533896);
         this.tortuga.right(90);
@@ -71,7 +71,6 @@ public class Tortuga2 extends Thread{
         this.tortuga.left(90);
         this.tortuga.forward(8);
         this.tortuga.penUp();
-        this.tortuga.forward(1000);
+        this.tortuga.hideTurtle();
     }   
 }
-
